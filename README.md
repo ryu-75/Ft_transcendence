@@ -13,3 +13,11 @@ Below are the key components and requirements of the project:
   <li><strong>Database:</strong> PostgreSQL</li>
   <li><strong>Deployment:</strong> Docker</li>
 </ul>
+
+<h2>Features:</h2>
+<ul>
+  <li><strong>Real-time Multiplayer Pong:</strong> Engage in thrilling Pong matches with other players directly on the website.</li>
+  <li><strong>User-friendly Interface:</strong> Enjoy a sleek and intuitive user interface for seamless navigation and gameplay.</li>
+  <li><strong>Interactive Chat:</strong> Communicate with other users via public or private chat channels, send direct messages, and invite players to games.</li>
+  <li><strong>User Account Management:</strong> Utilize OAuth login via 42 intranet, customize profile with unique name and avatar, enable two-factor authentication, manage friends list, and view detailed stats and match history.</li>
+</ul>
