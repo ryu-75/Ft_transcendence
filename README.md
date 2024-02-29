@@ -6,7 +6,7 @@ This project aims to create an interactive platform where users can engage in re
 Below are the key components and requirements of the project:
 </p>
 
-<h2>Technologies Used:</h2>
+<h3>Technologies Used:</h3>
 <ul>
   <li><strong>Backend:</strong> NestJS</li>
   <li><strong>Frontend:</strong> TypeScript framework of your choice</li>
@@ -14,7 +14,7 @@ Below are the key components and requirements of the project:
   <li><strong>Deployment:</strong> Docker</li>
 </ul>
 
-<h2>Features:</h2>
+<h3>Features:</h3>
 <ul>
   <li><strong>Real-time Multiplayer Pong:</strong> Engage in thrilling Pong matches with other players directly on the website.</li>
   <li><strong>User-friendly Interface:</strong> Enjoy a sleek and intuitive user interface for seamless navigation and gameplay.</li>
@@ -24,3 +24,5 @@ Below are the key components and requirements of the project:
   <li><strong>Customizable Gameplay: </strong> Customize Pong game with power-ups, different maps, and other features while retaining the option for a classic Pong experience.</li>
   <li><strong>Responsive Design:</strong> Ensure compatibility with major web browsers and support for seamless navigation using browser buttons.</li>
 </ul>
+
+<h2>Security Concerns</h2>
