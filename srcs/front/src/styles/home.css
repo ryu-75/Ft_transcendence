@@ -1,0 +1,183 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap';
+
+.mainContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.text-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.inputContainer > .errorLabel {
+  color: red;
+  font-size: 12px;
+}
+
+.welcome {
+  color: white;
+  font-weight: bolder;
+  text-shadow: rgb(17, 250, 192) 0px 4px 16px;
+  font-family: 'Space Grotesk', sans-serif;
+  text-decoration-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.pongRule
+{
+    height: 300px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+b {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    -webkit-animation: moveX 3.4s linear 0s infinite alternate, moveY 3s linear 0s infinite alternate;
+    -moz-animation: moveX 3.4s linear 0s infinite alternate, moveY 3s linear 0s infinite alternate;
+    -o-animation: moveX 3.4s linear 0s infinite alternate, moveY 3s linear 0s infinite alternate;
+    animation: moveX 3.4s linear 0s infinite alternate, moveY 3s linear 0s infinite alternate;
+}
+@-webkit-keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  @-moz-keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  @-o-keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  @keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+
+
+  @-webkit-keyframes moveY {
+    from { top: 0; } to { top: 100%; }
+  }
+  @-moz-keyframes moveY {
+    from { top: 0; } to { top: 100%; }
+  }
+  @-o-keyframes moveY {
+    from { top: 0; } to { top: 100%; }
+  }
+  @keyframes moveY {
+    from { top: 0; } to { top: 100%; }
+  }
+
+.one{
+    height: 150px;
+    width: auto;
+}
+.two{
+    height: 150px;
+    width: auto;
+}
+/* LAUNCH GAME BUTTON */
+
+#launchGameBtn {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-top: white 1px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(163, 163, 163, 1) 17%,
+    rgba(87, 97, 108, 1) 57%,
+    rgba(191, 191, 191, 1) 84%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  box-shadow: 0px 2px 3px 1px rgba(126, 126, 126, 0.7);
+}
+
+#launchGameBtn a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#spin {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  left: 70px;
+  top: 20px;
+  transform: rotate(0deg);
+  background: none;
+  position: absolute;
+  transition: all 0.5s ease-Out;
+}
+
+#launchGameBtn:hover #spin {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  left: -70px;
+  top: -70px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    232deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(163, 163, 163, 1) 17%,
+    rgba(87, 97, 108, 1) 57%,
+    rgba(191, 191, 191, 1) 84%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  transform: rotate(205deg);
+}
+
+button {
+  color: #bfc0c0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.letterMove:hover {
+  animation-name: letterMove;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes letterMove {
+  0% {
+    letter-spacing: 0.4rem;
+  }
+  100% {
+    letter-spacing: 0.8rem;
+  }
+}

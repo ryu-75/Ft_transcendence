@@ -1,0 +1,13 @@
+.pong-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+  height: 100vh;
+}
+
+.pong-canvas {
+  border: 1px solid black;
+  width: 80%;
+  height: auto;
+}

@@ -1,0 +1,12 @@
+# All
+node_modules
+
+# Front
+build
+
+# Back
+dist
+.env
+
+# VSCode
+.vscode

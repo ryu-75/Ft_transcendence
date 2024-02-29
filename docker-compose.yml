@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  backend:
+    build: ./srcs/back
+    environment:
+      DATABASE_URL: postgresql://${DB_USER}:${DB_PASSWORD}@postgres:5432/${DB_NAME}?schema=public
+      CLIENT_ID: ${CLIENT_ID}
+      CLIENT_SECRET: ${CLIENT_SECRET}
+      CALLBACK_URL: ${CALLBACK_URL}
+      AUTHORIZE_URL: ${AUTHORIZE_URL}
+      TOKEN_URL: ${TOKEN_URL}
+      BASE_URL: ${BASE_URL}
+      FRONT_URL: ${FRONT_URL}
+      JWT_SECRET: ${JWT_SECRET}
+      TWOFA_APP_NAME: ${TWOFA_APP_NAME}
+      BACKEND_URL: ${BACKEND_URL}
+      SALT: ${SALT}
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      - postgres
+
+  frontend:
+    build: ./srcs/front
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      REACT_APP_BACKEND_URL: ${REACT_APP_BACKEND_URL}
+
+volumes:
+  postgres_data:
