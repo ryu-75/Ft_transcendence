@@ -62,9 +62,7 @@ Below are the key components and requirements of the project:
 
 <h2>⭐ Getting Started</h2>
 <p>To launch the project, simply run the following command:</p>
-```bash
 docker-compose up --build
-```
 
 
 <h2>🔄 Compatibility</h2>
