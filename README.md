@@ -20,4 +20,7 @@ Below are the key components and requirements of the project:
   <li><strong>User-friendly Interface:</strong> Enjoy a sleek and intuitive user interface for seamless navigation and gameplay.</li>
   <li><strong>Interactive Chat:</strong> Communicate with other users via public or private chat channels, send direct messages, and invite players to games.</li>
   <li><strong>User Account Management:</strong> Utilize OAuth login via 42 intranet, customize profile with unique name and avatar, enable two-factor authentication, manage friends list, and view detailed stats and match history.</li>
+  <li><strong>Security Measures:</strong> Implement password hashing, protect against SQL injections, perform server-side validation for forms, and securely manage credentials.</li>
+  <li><strong>Customizable Gameplay: </strong> Customize Pong game with power-ups, different maps, and other features while retaining the option for a classic Pong experience.</li>
+  <li><strong>Responsive Design:</strong> Ensure compatibility with major web browsers and support for seamless navigation using browser buttons.</li>
 </ul>
